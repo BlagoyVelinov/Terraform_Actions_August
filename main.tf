@@ -80,4 +80,5 @@ resource "azurerm_app_service_source_control" "asscontrol" {
   app_id   = azurerm_linux_web_app.alwapp.id
   repo_url = var.repo_URL
   branch   = "main"
+  use_manual_integration = true
 }
